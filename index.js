@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-  const bandName = adj[Math.floor(Math.random() * adj.length)] + noun[Math.floor(Math.random() * noun.length)]
+  const bandName = adj[Math.floor(Math.random() * adj.length)] + " " + noun[Math.floor(Math.random() * noun.length)]
 
   res.render("index.ejs", {
     nameOfBand: bandName
